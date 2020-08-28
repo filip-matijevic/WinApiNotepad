@@ -13,5 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Core Components">
+      <UniqueIdentifier>{3d8e28fb-ac7f-4fb8-97ae-404a211ee91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core Component Headers">
+      <UniqueIdentifier>{3f2558fe-63be-44e9-9141-c0bb5672f6c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Noteeditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\Core Components</Filter>
+    </ClCompile>
+    <ClCompile Include="RootWindow.cpp">
+      <Filter>Source Files\Core Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files\Core Component Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RootWindow.h">
+      <Filter>Header Files\Core Component Headers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
