@@ -23,7 +23,7 @@ LRESULT RootWindow::HandleMessage(
 		}
 		return 0;
 	}
-	return __super::HandleMessage(uMsg, wParam, lParam);
+	return Window::HandleMessage(uMsg, wParam, lParam);
 }
 RootWindow *RootWindow::Create()
 {
@@ -41,5 +41,8 @@ RootWindow *RootWindow::Create()
 
 LRESULT RootWindow::OnCreate()
 {
+	OutputDebugString("Created a window and set its focus!\n");
+	textView = TextView::Create(m_hwnd);
+	m_hwndChild = textView->GetHWND();
 	return 0;
 }
